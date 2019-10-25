@@ -42181,8 +42181,8 @@ var LineChart = function () {
 
         this.bottomHeight = 30; //底部状态样栏的高度
         this.xAxisHeight = 150; //上方X轴区域的高度
-        this.xAxisCanvas = new fabric_1.fabric.Canvas(xAxisCanvasId, { selection: false });
-        this.canvas = new fabric_1.fabric.Canvas(contentCanvasId, { selection: false });
+        this.xAxisCanvas = new fabric_1.fabric.Canvas(xAxisCanvasId, { selection: false, hoverCursor: 'default' });
+        this.canvas = new fabric_1.fabric.Canvas(contentCanvasId, { selection: false, hoverCursor: 'default' });
         this.width = this.canvas.getWidth();
         this.height = this.canvas.getHeight();
     }

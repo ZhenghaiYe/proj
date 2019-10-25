@@ -7,10 +7,10 @@ export class LineChart {
     height: number;
     bottomHeight: number = 30; //底部状态样栏的高度
     xAxisHeight: number = 150; //上方X轴区域的高度
-    
+
     constructor(xAxisCanvasId: string, contentCanvasId: string) {
-        this.xAxisCanvas = new fabric.Canvas(xAxisCanvasId, { selection: false });
-        this.canvas = new fabric.Canvas(contentCanvasId, { selection: false });
+        this.xAxisCanvas = new fabric.Canvas(xAxisCanvasId, { selection: false, hoverCursor: 'default' });
+        this.canvas = new fabric.Canvas(contentCanvasId, { selection: false, hoverCursor: 'default' });
 
         this.width = this.canvas.getWidth();
         this.height = this.canvas.getHeight();
